@@ -2,9 +2,8 @@
 <manifest>
 
  <!-- Trees -->
- <project path="device/asus/X01AD" name="Havoc-OS/android_manifest.git" remote="github" revision="eleven" />
- <project path="device/asus/X01AD-common" name="Assunzain/device_asus_X01AD-1.git" remote="github" revision="18.1" />
- <project path="vendor/X01AD" name="Assunzain/vendor_asus_X01AD-1" remote="github" revision="A11" />
- <project path="Assunzain/Kernel_asus_X01AD.git" remote="github" revision="oc" />
+ <project path="device/asus/X01AD" name="device_asus_X01AD-1" remote="mine" revision="18.1" />
+ <project path="vendor/X01AD" name="vendor_asus_X01AD-1" remote="mine" revision="A11" />
+ <project path="Kernel_asus_X01AD" remote="mine" revision="oc" />
  
 </manifest>
