@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-       
+         <remote name="cl"
+        fetch="https://gitlab.com/Amritorock" />
+
         <remote name="user"
         fetch="https://github.com/Assunzain" />
 
@@ -9,5 +11,7 @@
         <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="Bootleg.A13" />
         <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD" remote="user" revision="Bootleg.A13" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Bootleg.A13" />
-
+       <!-- clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="cl" revision="master" />
+            
 </manifest>
