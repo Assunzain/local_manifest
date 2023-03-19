@@ -9,8 +9,8 @@
         fetch="https://github.com/Assunzain" />
 
         <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="X01AD_HAVOC_DT" remote="user" revision="eleven" />
-        <project path="vendor/asus/X01AD" name="vendor_asus_X01AD-1" remote="hd" revision="eleven" />
-        <project path="Kernel/asus/X01AD" name="kernel_asus_X01AD" remote="hd" revision="eleven" />
+        <project path="device/asus/X01AD" name="X01AD_HAVOC_DT" remote="hd" revision="eleven" />
+        <project path="vendor/asus/X01AD" name="vendor_asus_X01AD-1" remote="user" revision="18.1" />
+        <project path="Kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="oc" />
 
 </manifest>
