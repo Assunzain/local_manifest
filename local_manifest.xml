@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-        
-        <remote name="hd"
-        fetch="https://github.com/Havoc-Devices" />
        
         <remote name="user"
         fetch="https://github.com/Assunzain" />
 
         <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="X01AD_HAVOC_DT" remote="user" revision="eleven" />
-        <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD" remote="hd" revision="eleven" />
-        <project path="kernel/asus/X01AD" name="android_kernel_asus_X01AD" remote="hd" revision="eleven" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="Bootleg.A13" />
+        <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD" remote="user" revision="Bootleg.A13" />
+        <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Bootleg.A13" />
 
 </manifest>
