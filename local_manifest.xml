@@ -11,6 +11,6 @@
         <!-- Sync trees -->
         <project path="device/asus/X01AD-1" name="X01AD_HAVOC_DT" remote="user" revision="eleven" />
         <project path="vendor/asus/X01AD-1" name="android_vendor_asus_X01AD" remote="hd" revision="eleven" />
-        <project path="ernel/asus/X01AD" name="android_kernel_asus_X01AD" remote="hd" revision="eleven" />
+        <project path="Kernel/asus/X01AD" name="android_kernel_asus_X01AD" remote="hd" revision="eleven" />
 
 </manifest>
