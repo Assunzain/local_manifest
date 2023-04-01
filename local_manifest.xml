@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-         <remote name="cl"
-        fetch="https://gitlab.com/Amritorock" />
         <remote name="user"
         fetch="https://github.com/Assunzain" />
-        <remote name="user2"
-        fetch="https://github.com/Nishant9947" />
-
+        
         <!-- Sync trees -->
         <project path="device/asus/X01AD" name="android_device_asus_X01AD-1" remote="user" revision="projectX" />
         <project path="vendor/asus/X01AD" name="vendor_asus_X01AD-1" remote="user" revision="A-13" />
-        <project path="kernel/asus/X01AD" name="kernel_asus_X01AD" remote="user2" revision="Vdso-T" />
-       <!-- clang -->
-        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="cl" revision="master" />
-            
+        <project path="kernel/asus/X01AD" name="kernel_asus_X01AD" remote="user" revision="master" />
+       
 </manifest>
