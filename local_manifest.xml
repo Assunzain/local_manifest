@@ -9,6 +9,8 @@
      fetch="https://github.com/Assunzain" />
      <remote name="pecel"
      fetch="https://github.com/PixelExperience" />
+     <remote name="em"
+     fetch="https://github.com/EmanuelCN" />
 
             <!-- Trees -->
             <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="zain" revision="banana" />
@@ -23,7 +25,8 @@
            
             <remove-project name="android_hardware_qcom_media"/>      
             <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996_media" remote="pecel" revision="thirteen" />
-            <!-- Clang -->
-            <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="cl" revision="master" />
+           
+   <!-- Clang -->
+   <project path="prebuilts/clang/host/linux-x86/ZyC-clang" name="zyc_clang-14" remote="em" revision="master" clone-depth="1" />
 
 </manifest>
