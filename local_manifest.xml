@@ -7,9 +7,9 @@
      fetch="https://gitlab.com/Amritorock" />
      <remote name="zain"
      fetch="https://github.com/Assunzain" />
-     <remote name="pecel"
+     <remote name="hals"
      fetch="https://github.com/PixelExperience" />
-     <remote name="em"
+     <remote name="clang"
      fetch="https://github.com/EmanuelCN" />
 
             <!-- Trees -->
@@ -18,15 +18,17 @@
             <project path="kernel/asus/X01AD" name="kernel_base" remote="zain" revision="Vdso-T" />
             <!-- HALs -->
             <remove-project name="android_hardware_qcom_display"/>
-            <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="pecel" revision="thirteen" />          
+            <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="hals" revision="thirteen" />          
           
             <remove-project name="android_hardware_qcom_audio"/>
-            <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_msm8996_audio" remote="pecel" revision="thirteen" />
+            <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf_msm8996_audio" remote="hals" revision="thirteen" />
            
             <remove-project name="android_hardware_qcom_media"/>      
-            <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996_media" remote="pecel" revision="thirteen" />
-           
+            <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf_msm8996_media" remote="hals" revision="thirteen" />
+         <remove-project name="platform/hardware/google/camera"/>
+
+            <project path="hardware/google/camera" name="X01AD_hardware_google_camera" remote="wrdn" revision="master" />  
    <!-- Clang -->
-   <project path="prebuilts/clang/host/linux-x86/ZyC-clang" name="zyc_clang-14" remote="em" revision="master" clone-depth="1" />
+   <project path="prebuilts/clang/host/linux-x86/ZyC-clang" name="zyc_clang-14" remote="clang" revision="master" clone-depth="1" />
 
 </manifest>
