@@ -1,12 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version<?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-        <remote name="user"
-        fetch="https://github.com/Assunzain" />
-        
-        <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD-1" remote="user" revision="projectX" />
-        <project path="vendor/asus/X01AD" name="vendor_asus_X01AD-1" remote="user" revision="A-13" />
-        <project path="kernel/asus/X01AD" name="kernel_asus_X01AD" remote="user" revision="master" />
-       
+
+     <!-- Remote -->
+
+     <remote name="zain"
+     fetch="https://github.com/Assunzain" />
+     <remote name="hals"
+     fetch="https://github.com/PixelExperience" />
+     <remote name="clang"
+     fetch="https://github.com/EmanuelCN" />
+     <remote name="g"
+     fetch="https://github.com/Wrdn28" />
+
+            <!-- Trees -->
+            <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="zain" revision="pixelos" />
+            <project path="vendor/asus/X01AD" name="vendor_asus_X01AD_A13" remote="zain" revision="main" />
+            <project path="kernel/asus/X01AD" name="kernel_base" remote="zain" revision="Vdso-T" />
+            <!-- HALs -->
+            <remove-project name="android_hardware_qcom_display"/>
+            <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="hals" revision="thirteen" />          
+          
+            
+            <remove-project name="platform/hardware/google/camera"/>
+            <project path="hardware/google/camera" name="X01AD_hardware_google_camera" remote="g" revision="master" />  
+   <!-- Clang -->
+   <project path="prebuilts/clang/host/linux-x86/ZyC-clang" name="zyc_clang-14" remote="clang" revision="master" clone-depth="1" />
+
 </manifest>
