@@ -10,6 +10,8 @@
      fetch="https://github.com/PixelExperience" />
      <remote name="clang"
      fetch="https://github.com/EmanuelCN" />
+     <remote name="cfg"
+     fetch="https://github.com/ArrowOS" />
      <remote name="g"
      fetch="https://github.com/Wrdn28" />
 
@@ -19,11 +21,13 @@
             <project path="kernel/asus/X01AD" name="kernel_base" remote="zain" revision="Vdso-T" />
             <!-- HALs -->
             <remove-project name="android_hardware_qcom_display"/>
-            <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="hals" revision="thirteen" />          
-          
+            <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="hals" revision="thirteen" />                  
             
             <remove-project name="platform/hardware/google/camera"/>
-            <project path="hardware/google/camera" name="X01AD_hardware_google_camera" remote="g" revision="master" />  
+            <project path="hardware/google/camera" name="X01AD_hardware_google_camera" remote="g" revision="master" />
+
+            <remove-project name="vendor_qcom_opensource_data-ipa-cfg-mgr"/>
+            <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="cfg" revision="xr" />  
    <!-- Clang -->
    <project path="prebuilts/clang/host/linux-x86/ZyC-clang" name="zyc_clang-14" remote="clang" revision="master" clone-depth="1" />
 
