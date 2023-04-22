@@ -16,7 +16,7 @@
      fetch="https://github.com/Wrdn28" />
 
             <!-- Trees -->
-            <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="zain" revision="pixelos" />
+            <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="zain" revision="projectX" />
             <project path="vendor/asus/X01AD" name="vendor_asus_X01AD_A13" remote="zain" revision="main" />
             <project path="kernel/asus/X01AD" name="kernel_base" remote="zain" revision="Vdso-T" />
             <!-- HALs -->
