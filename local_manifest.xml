@@ -17,7 +17,7 @@
             <project path="vendor/asus/X01AD" name="vendor_asus_X01AD_A13" remote="zain" revision="main" />
             <project path="kernel/asus/X01AD" name="kernel_base" remote="zain" revision="Vdso-T" />
             <!-- HALs -->
-            <remove-project name="android_hardware_qcom_display"/>
+            <remove-project name="hardware_qcom-caf_display"/>
             <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" remote="hals" revision="thirteen" />                  
             
             <remove-project name="platform/hardware/google/camera"/>
