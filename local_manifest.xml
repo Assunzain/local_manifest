@@ -29,6 +29,6 @@
             <remove-project name="platform/hardware/google/camera"/>
             <project path="hardware/google/camera" name="X01AD_hardware_google_camera" remote="g" revision="master" />  
    <!-- Clang -->
-   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clangclaclangclclangclaclangc" revision="master" clone-depth="1" />
+   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="master" clone-depth="1" />
 
 </manifest>
