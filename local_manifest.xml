@@ -4,7 +4,7 @@
 
      <!-- Remote -->
      <remote name="cl"
-     fetch="https://github.com/kdrag0n" />
+     fetch="https://gitlab.com/LeCmnGend" />
      <remote name="zain"
      fetch="https://github.com/Assunzain" />
      <remote name="hals"
@@ -29,6 +29,6 @@
             <remove-project name="platform/hardware/google/camera"/>
             <project path="hardware/google/camera" name="X01AD_hardware_google_camera" remote="g" revision="master" />  
    <!-- Clang -->
-   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="master" clone-depth="1" />
+   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="clang-15" clone-depth="1" />
 
 </manifest>
