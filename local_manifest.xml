@@ -1,12 +1,22 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-        <remote name="user"
+        
+        <!-- remote -->
+        <remote name="cl"
+        fetch="https://github.com/kdrag0n" />
+        <remote name="me"
+        fetch="https://github.com/Yara0202" />
+        <remote name="zain"
         fetch="https://github.com/Assunzain" />
 
         <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="device_asus_X01AD_A11" remote="user" revision="DerpFest" />
-        <project path="vendor/asus/X01AD" name="vendor_asus_X01AD-1" remote="user" revision="A-11" />
-        <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="master" />
-       
+        <project path="device/asus/X01AD" name="X01AD" remote="zain" revision="derp-12.1-test" clone-depth="1" />
+        <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD" remote="me" revision="12.1-t" clone-depth="1" />
+        <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="zain" revision="GLKernelOC" clone-depth="1" />       
+     
+        <!-- Clang -->
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="master" clone-depth="1" />
+
 </manifest>
