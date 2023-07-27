@@ -11,7 +11,7 @@
         
 
         <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="user" revision="tes" />
+        <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="user" revision="Evox13+" />
         <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD" remote="tes" revision="octavi" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="GLKernelSU-non-oc" />
 
