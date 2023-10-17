@@ -5,9 +5,7 @@
         fetch="https://github.com/Assunzain" />
         <remote name="clang"
         fetch="https://github.com/kdrag0n" />
-        <remote name="hals"
-        fetch="https://github.com/LineageOS" />
-
+        
         <!-- Sync trees -->
         <project path="device/asus/X01AD" name="device_asus_X01AD" remote="user" revision="AlphaDroid" />
         <project path="vendor/asus/X01AD" name="vendor_asus_X01AD_A13" remote="user" revision="13" />
