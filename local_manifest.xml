@@ -4,7 +4,7 @@
 
      <!-- Remote -->
      <remote name="cl"
-     fetch="https://gitlab.com/LeCmnGend" />
+     fetch="https://github.com/kdrag0n/" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
     
@@ -14,6 +14,5 @@
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
         <project path="vendor/v4afx" name="vendor_v4afx" remote="user" revision="main" />
    <!-- Clang -->
-   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="clang-15" clone-depth="1" />
-
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="master" clone-depth="1" />
 </manifest>
