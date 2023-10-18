@@ -4,7 +4,7 @@
 
      <!-- Remote -->
      <remote name="cl"
-     fetch="https://gitlab.com/LeCmnGend" />
+     fetch="https://gitlab.com/arrowos-project" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
     
@@ -18,6 +18,6 @@
             <project path="frameworks/base" name="frameworks_base2" remote="user" revision="13" />
            
    <!-- Clang -->
-   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="clang-15" clone-depth="1" />
+   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
 
 </manifest>
