@@ -4,7 +4,7 @@
 
      <!-- Remote -->
      <remote name="cl"
-     fetch="https://github.com/kdrag0n/" />
+     fetch="https://github.com/kdrag0n" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
     
