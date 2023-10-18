@@ -5,7 +5,7 @@
      <!-- Remote -->
      <remote name="cl"
      fetch="https://gitlab.com/LeCmnGend" />
-     <remote name="zain"
+     <remote name="user"
      fetch="https://github.com/Assunzain" />
     
             <!-- Sync trees -->
@@ -15,7 +15,7 @@
         <project path="vendor/v4afx" name="vendor_v4afx" remote="user" revision="main" />
             <!-- HALs --> 
             <remove-project name="frameworks_base"/>
-            <project path="frameworks/base" name="frameworks_base2" remote="zain" revision="13" />
+            <project path="frameworks/base" name="frameworks_base2" remote="user" revision="13" />
            
    <!-- Clang -->
    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="clang-15" clone-depth="1" />
