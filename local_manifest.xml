@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-        <remote name="user"
-        fetch="https://github.com/Assunzain" />
-        <remote name="clang"
-        fetch="https://github.com/kdrag0n" />
-        <remote name="tes"
-        fetch="https://github.com/Wrdn28" />
 
-        
+     <!-- Remote -->
+     <remote name="cl"
+     fetch="https://gitlab.com/arrowos-project" />
+     <remote name="user"
+     fetch="https://github.com/Assunzain" />
+    
+            <!-- Sync trees -->
+        <project path="device/asus/X01AD" name="device_asus_X01AD" remote="user" revision="Evox13+" />
+        <project path="vendor/asus/X01AD" name="vendor_asus_X01AD_A13" remote="user" revision="13" />
+        <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
+        <project path="vendor/v4afx" name="vendor_v4afx" remote="user" revision="main" />
+            
+   <!-- Clang -->
+   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
 
-        <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="device_asus_X01AD_A13" remote="user" revision="Evox13+" />
-        <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD" remote="tes" revision="octavi" />
-        <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="GLKernelSU-non-oc" />
-
-       <!-- Clang -->
-     <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-       
 </manifest>
