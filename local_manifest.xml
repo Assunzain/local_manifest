@@ -9,7 +9,7 @@
      fetch="https://github.com/Assunzain" />
     
             <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="12.1-lineage-19.1" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="12.1-CherishOS" />
         <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="12.1" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
         
