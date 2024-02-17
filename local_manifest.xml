@@ -13,6 +13,11 @@
         <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="14-Matrixx" />
         <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="14.0" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="14-KSU" />
+        <!-- remove hals -->
+        <remove-project name="LineageOS/android_hardware_qcom_display"/>
+        <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display_msm8996" remote="user" revision="14.0-msm8996" />
+     
+     
         <!-- Clang -->
    <project path="prebuilts/clang/host/linux-x86/clang-r498229b" name="aosp-clang" remote="cl" revision="17" clone-depth="1" />
 </manifest>
