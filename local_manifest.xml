@@ -10,10 +10,18 @@
      
     
             <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="14-lineage21" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="14-DerpFest" />
         <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="14.0" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="14-KSU" />
-        
+        <!-- remove hals -->
+        <remove-project name="hardware_qcom_audio"/>
+        <remove-project name="hardware_qcom_display"/>
+        <remove-project name="hardware_qcom_media"/>
+        <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display_msm8996" remote="user" revision="14.0-msm8996" />
+        <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio_msm8996" remote="user" revision="14.0-msm8996" />
+        <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media_msm8996" remote="user" revision="14.0-msm8996" />
+     
+     
         <!-- Clang -->
    <project path="prebuilts/clang/host/linux-x86/clang-r487747c" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="cl" revision="14.0" clone-depth="1" />
 </manifest>
