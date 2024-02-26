@@ -16,6 +16,7 @@
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
             <!-- HALs --> 
             <remove-project name="android_hardware_qcom_display"/>
+            <remove-project name="kdrag0n/proton-clang"/>
             <remove-project name="android_hardware_qcom_media"/>
             <remove-project name="android_hardware_qcom_audio"/>
             <project path="hardware/qcom-caf/msm8953/display" name="android_hardware_qcom_display" remote="hals" revision="lineage-20.0-caf-msm8996" />
