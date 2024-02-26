@@ -7,14 +7,20 @@
      fetch="https://github.com/kdrag0n" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
+     <remote name="hals"
+     fetch="https://github.com/LineageOS" />
     
             <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-derpfest" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-superior" />
         <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="13.0" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
             <!-- HALs --> 
-            <remove-project name="frameworks_base"/>
-            <project path="frameworks/base" name="frameworks_base2" remote="user" revision="13" />
+            <remove-project name="android_hardware_qcom_display"/>
+            <remove-project name="android_hardware_qcom_media"/>
+            <remove-project name="android_hardware_qcom_audio"/>
+            <project path="hardware/qcom-caf/msm8953/display" name="android_hardware_qcom_display" remote="hals" revision="lineage-20.0-caf-msm8996" />
+            <project path="hardware/qcom-caf/msm8953/media" name="android_hardware_qcom_media" remote="hals" revision="lineage-20.0-caf-msm8996" />
+            <project path="hardware/qcom-caf/msm8953/audio" name="android_hardware_qcom_audio" remote="hals" revision="lineage-20.0-caf-msm8996" />
            
    <!-- Clang -->
    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="master" clone-depth="1" />
