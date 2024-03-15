@@ -11,7 +11,7 @@
     
             <!-- Sync trees -->
         <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="14-Matrixx" />
-        <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="Tes" />
+        <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="14.0" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="14-KSU" />
         
      
