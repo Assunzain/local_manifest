@@ -30,10 +30,6 @@
      
         <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
 
-<remove-project name="android_build" />
-        <project path="build/make" name="rr_build" remote="strongre
-        
-     
      <!-- Hals -->
         <remove-project name="android_hardware_qcom_audio" />
         <remove-project name="android_hardware_qcom_media" />
