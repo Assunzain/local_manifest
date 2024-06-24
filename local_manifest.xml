@@ -28,7 +28,9 @@
     <linkfile src="tools" dest="build/tools"/>
     </project>
      
+        <remove-project name="android_frameworks_opt_net_wifi" />
         <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
+        <project path="frameworks/opt/net/wifi" name="LineageOS/android_frameworks_opt_net_wifi" remote="all" revision="lineage-17.1" />
 
      <!-- Hals -->
         <remove-project name="android_hardware_qcom_audio" />
