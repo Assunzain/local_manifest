@@ -16,6 +16,7 @@
      <!-- HALs --> 
             <remove-project name="frameworks_base"/>
             <project path="frameworks/base" name="frameworks_base2" remote="user" revision="13" />
+            <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="user" revision="main" />
             
    <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
