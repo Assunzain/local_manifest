@@ -7,6 +7,8 @@
      fetch="https://gitlab.com/arrowos-project" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
+     <remote name="all"
+     fetch="https://github.com/" />
     
             <!-- Sync trees -->
         <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-Afterlife" />
@@ -14,7 +16,11 @@
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
 
      <!-- HALs --> 
-        <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="user" revision="main" />
+     <remove-project name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9"/>
+     <remove-project name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9"/>
+     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="all" revision="lineage-19.1" />
+     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="all" revision="lineage-19.1" />
+     <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="user" revision="main" />
             
    <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
