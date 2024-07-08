@@ -6,7 +6,7 @@
      <remote name="all"
      fetch="https://github.com" />
      <remote name="cl"
-     fetch="https://github.com/kdrag0n" />
+     fetch="https://gitlab.com/arrowos-project" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
      <remote name="hals"
@@ -41,7 +41,6 @@
         <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
 
         <!-- Clang -->
-   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="cl" revision="master" clone-depth="1" />
-
+   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
 
 </manifest>
