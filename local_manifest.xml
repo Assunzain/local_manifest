@@ -11,8 +11,7 @@
      fetch="https://github.com/Assunzain" />
      <remote name="hals"
      fetch="https://github.com/LineageOS" />
-     <remote name="cl"
-     fetch="https://github.com/kdrag0n" />
+   
     
             <!-- Sync trees -->
         <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="11-Havoc" />
