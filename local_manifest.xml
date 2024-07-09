@@ -14,7 +14,7 @@
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
 
      <remove-project name="RisingTechOSS/android_build"/>
-    <project path="build/make" name="android_build-3" groups="pdk" remote="user" evision="thirteen" >
+    <project path="build/make" name="android_build-3" groups="pdk" remote="user" revision="thirteen" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
