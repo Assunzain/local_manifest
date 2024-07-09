@@ -9,15 +9,21 @@
      fetch="https://github.com/Assunzain" />
     
             <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-derpfest" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-rising" />
         <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="13.0" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
 
-     <!-- HALs --> 
-            <remove-project name="frameworks_base"/>
-            <project path="frameworks/base" name="frameworks_base2" remote="user" revision="13" />
-            <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="user" revision="main" />
-            
+     <remove-project name="RisingTechOSS/android_build"/>
+    <project path="build/make" name="android_build-3" groups="pdk" remote="user" evision="thirteen" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+    </project>
+     
+     
    <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
 
