@@ -7,6 +7,8 @@
      fetch="https://gitlab.com/arrowos-project" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
+    <remote name="all"
+     fetch="https://github.com/" />
     
             <!-- Sync trees -->
         <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-rising" />
@@ -22,7 +24,11 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
     </project>
-     
+
+     <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
+     <remove-project name="RisingTechOSS/android_vendor_rising"/>
+     <project path="vendor/lineage" name="RisingTechOSS/android_vendor_rising" remote="all" revision="thirteen" />
+  
      
    <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
