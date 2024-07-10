@@ -11,12 +11,12 @@
      fetch="https://github.com/" />
     
             <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="13-rising" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD" remote="user" revision="1" />
         <project path="vendor/asus/X01AD" name="propriatary_vendor_asus_X01AD" remote="user" revision="13.0" />
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
 
-     <remove-project name="RisingTechOSS/android_build"/>
-    <project path="build/make" name="android_build-3" remote="user" revision="thirteen" >
+     <remove-project name="build_make"/>
+    <project path="build/make" name="build_make" remote="user" revision="alpha-13" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -27,10 +27,6 @@
     </project>
 
      <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
-     <remove-project name="RisingTechOSS/android_vendor_rising"/>
-     <project path="vendor/lineage" name="RisingTechOSS/android_vendor_rising" remote="all" revision="thirteen" />
-     <project path="vendor/rising" name="RisingTechOSS/android_vendor_rising" remote="all" revision="thirteen" />
-  
      
    <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
