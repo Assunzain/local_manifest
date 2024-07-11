@@ -16,6 +16,7 @@
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
 
      <remove-project name="build_make"/>
+     <remove-project name="packages_providers_DownloadProvider"/>
     <project path="build/make" name="build_make" remote="user" revision="alpha-13" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -27,6 +28,8 @@
     </project>
 
      <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
+
+     <project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" remote="all" revision="lineage-20.0" />
      
    <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
