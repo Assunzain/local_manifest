@@ -16,6 +16,7 @@
         <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="Perf{KSU}" />
 
      <remove-project name="android_build"/>
+     <remove-project name="android_device_cherish_sepolicy"/>
     <project path="build/make" name="android_build-4" remote="user" revision="tiramisu" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -27,6 +28,7 @@
     </project>
 
      <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
+     <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="user" revision="tiramisu" />
      
      
    <!-- Clang -->
