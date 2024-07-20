@@ -27,7 +27,10 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
 
-     <project path="build/soong" name="LineageOS/android_build_soong" remote="all" revision="lineage-20.0" />
+     <project path="build/soong" name="LineageOS/android_build_soong" remote="all" revision="lineage-20.0" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+     </project>
      <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
     
      
