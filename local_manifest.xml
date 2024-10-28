@@ -7,9 +7,11 @@
      fetch="https://github.com/Wrdn28/" />
      <remote name="cl"
      fetch="https://gitlab.com/crdroidandroid" />
+     <remote name="user2"
+     fetch="https://github.com/Assunzain" />
     
             <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="android_device_asus_X01AD-udc" remote="user" revision="android-14" />
+        <project path="device/asus/X01AD" name="android_device_asus_X01AD-udc" remote="user2" revision="android-14" />
         <project path="vendor/asus/X01AD" name="android_vendor_asus_X01AD-udc" remote="user" revision="Android-14" />
         <project path="kernel/asus/X01AD" name="android_kernel_asus_X01AD-udc" remote="user" revision="Android-14" />
 
