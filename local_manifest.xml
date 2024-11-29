@@ -7,8 +7,13 @@
      fetch="https://gitlab.com/arrowos-project" />
      <remote name="user"
      fetch="https://github.com/Assunzain" />
+     <remote name="git"
+     fetch="https://github.com" />
 
       <remove-project name="build_make"/>
+      <remove-project name="LineageOS/android_packages_providers_DownloadProvider"/>
+      <project path="packages/providers/DownloadProvider" name="ArrowOS/android_packages_providers_DownloadProvider" remote="git" revision="arrow-13.1" />
+      
     <project path="build/make" name="build_make" remote="user" revision="alpha-13" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
