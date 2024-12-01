@@ -1,12 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
+        
+        <!-- remote -->
+        <remote name="me"
+        fetch="https://github.com/mipa-ginkgo" />
+        <remote name="af"
+        fetch="https://github.com/crdroidandroid" />
+        <remote name="arrow-gl"
+        fetch="https://gitlab.com/arrowos-project" />
+        <remote name="cl"
+        fetch="https://gitlab.com/arrowos-project" />
         <remote name="user"
         fetch="https://github.com/Assunzain" />
+        
+        <!-- Replacement -->
+        <remove-project name="android_frameworks_base" />
+        <remove-project name="android_hardware_qcom_audio" />
+        <remove-project name="android_hardware_qcom_display" />
+        <remove-project name="android_hardware_qcom_media" />
+        <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
+        <remove-project name="android_vendor_arrow" />
+        <remove-project name="android_packages_apps_Settings" />
+        <remove-project name="android_build" />
+        <remote-project name="platform/build" />
+        <remove-project name="android_packages_apps_DeskClock" />
+        <remove-project name="android_bionic" />
+        <remove-project name="android_packages_apps_Launcher3" />
+        <remove-project name="android_packages_modules_Bluetooth" />
+        <remove-project name="platform/external/sonivox" />
 
-        <!-- Sync trees -->
-        <project path="device/asus/X01AD" name="device_asus_X01AD_A11" remote="user" revision="DerpFest" />
-        <project path="vendor/asus/X01AD" name="vendor_asus_X01AD-1" remote="user" revision="A-11" />
-        <project path="kernel/asus/X01AD" name="Kernel_asus_X01AD" remote="user" revision="master" />
+        <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="cl" revision="master" clone-depth="1" />
+        <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="user" revision="main" />
+        <project path="packages/apps/ArrowLab" name="packages_apps_ArrowLab" remote="me" revision="arrow-13.1-ui" />
+        <project path="bionic" name="android_bionic" remote="me" revision="arrow-13.1" />
+        <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="me" revision="arrow-13.1" />
+        <project path="vendor/arrow" name="android_vendor_arrow" remote="me" revision="arrow-13.1" />
+        <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="me" revision="arrow-13.1" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="me" revision="arrow-13.1-wip" />
+        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="me" revision="arrow-13.1-ui" />
+        <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="arrow-gl" revision="arrow-13.1" />
+        <project path="packages/apps/GameSpace" name="packages_apps_GameSpace-1" remote="me" revision="lineage-20.0" />
+        <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="me" revision="arrow-13.1" />
+        <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="me" revision="arrow-13.1" />
+        <project path="external/sonivox" name="platform_external_sonivox" remote="me" revision="arrow-13.1" />
        
+        <!-- build -->
+        <project path="build/make" name="android_buildarrow" remote="user" revision="arrow-13.1" >
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+        </project>
+        
+        
 </manifest>
