@@ -15,7 +15,7 @@
 
      <!-- HALs --> 
             <remove-project name="frameworks_base"/>
-            <project path="frameworks/base" name="frameworks_base2" remote="user" revision="13" />
+            <project path="frameworks/base" name="frameworks_derp" remote="user" revision="13" />
             <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="user" revision="main" />
             
    <!-- Clang -->
