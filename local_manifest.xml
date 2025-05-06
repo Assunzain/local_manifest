@@ -44,7 +44,7 @@
         <project path="system/core" name="rr_system_core" remote="strongreasons" revision="Q" />
         <project path="vendor/rr" name="android_vendor_resurrection" remote="strongreasons" revision="Q" />
         <project path="packages/apps/Settings" name="rr_packages_apps_Settings" remote="user" revision="Q" />
-        <project path="packages/apps/ViPER4AndroidFX" name="Ethereal-OS/packages_apps_ViPER4AndroidFX" remote="all" revision="A13" />
+        <project path="packages/apps/ViPER4AndroidFX" name="TogoFire/packages_apps_ViPER4AndroidFX" remote="all" revision="v4a" />
 
      <!-- Hals -->
         <remove-project name="LineageOS/android_hardware_qcom_audio" />
